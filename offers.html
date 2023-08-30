@@ -78,10 +78,10 @@
 
 
     }
-
     @media(max-width: 800px) {
-        .container {
+        .container{
             grid-template-columns: repeat(2, 1fr);
+           
 
         }
     }
@@ -89,23 +89,40 @@
     @media(max-width: 500px) {
         .container {
             grid-template-columns: repeat(1, 1fr);
+           
+
 
         }
     }
-    h1{
-        text-shadow: 0 0 10px black;
+    @media(max-width: 800px) {
+        section{
+            grid-template-columns: repeat(3, 1fr);
+           
+
+        }
     }
+
+    @media(max-width: 500px) {
+        section {
+            grid-template-columns: repeat(3, 1fr);
+           
+
+
+        }
+    }
+
     
     </style>
 </head>
 
 <body>
     <section style="background-color: white;box-shadow: 0 0 10px black;"><nav>
-        <div style="display:grid;grid-template-rows:100px">
+        <div style="display:grid;grid-template-rows:100px" >
          <div class="topic"> 
             <h1><b style="font-size:150px">Q</b>
             <i style="color:rgb(235, 235, 72);font-size:100px;">choice</i></h1>
         </div>
+        <div>
          <ul align="right">
         <li><a href="about.html"> About</a></li>
         <li><a href="review.html">Review</a></li>
@@ -113,13 +130,13 @@
         <li><a href="offers.html">Offers</a></li>
         <li><a href="video.html">Chefview</a></li>
         <li><a href="list.html">Book</a></li>
-        </ul>
+        </ul></div>
         
         <div align="right" class="icon">
             <i class="fa-solid fa-magnifying-glass"></i>
             <i class="fa-solid fa-heart"></i>
             <i class="fa-solid fa-cart-shopping"></i>
-        </div>
+        </div></div>
         </nav>
         </section>
     <h1 style="font-family:cursive;text-align: center;color:white;font-size: 50px;"> Our Special Offers</h1>
