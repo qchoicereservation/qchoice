@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="box.css">
+<title>Seat Reservation  </title>
+<style>
+    .seat {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-color: rgb(222, 214, 214);
+        transform: rotateX(20deg);
+        cursor: pointer;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin:10px;
+        transition: 400ms;
+    }
+        .seat:hover{
+        filter:grayscale(1);
+        transform:scale(1.03); 
+    }
+ #seats{
+perspective: 800px;
+justify-content: center;
+display:flex;
+ }
+ .tablle{
+    width:200px;
+    height:100px;
+    background-color: rgba(165, 42, 42, 0.808);
+    position:relative;
+    transform:rotateX(20deg);
+ }
+ .seat:nth-child(1){
+    top: -50px;
+    left: 20px;
+ }
+ .seat:nth-child(2){
+    top: -50px;
+    right:20px;
+ }
+ .seat:nth-child(3){
+    bottom:-50px;
+    left:20px;
+ }
+ .seat:nth-child(4){
+    bottom:-50px;
+    right:20px;
+ }
+ body{
+    background-color: bisque;
+ }
+ h2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(247, 146, 15);
+    font-size: 30px;
+    text-shadow: 0 0 8px black;
+ }
+ p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgba(247, 146, 15, 0.937);
+    font-size: 30px;
+    text-shadow: 0 0 8px rgb(59, 58, 58);
+ }
+ @keyframes cookingAnimation {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+.cooking-icon {
+    animation: cookingAnimation 0.5s ease-in-out infinite;
+    display: inline-block;
+}
+#seats{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:repeat(2,1fr) ;
+    row-gap:200px;
+    padding-left: 100px;
+}
+
+    
+</style>
+</head>
+<body>
+    <section><nav>
+        <div class="container11">
+         <div class="topic"> 
+            <h1><b style="font-size:100px">Q</b>
+            <i style="color:rgb(235, 235, 72);font-size:50px">choice</i></h1>
+        </div>
+        
+         <div><ul align="right">
+        <li><a href="about.html"> About</a></li>
+        <li><a href="review.html">Review</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="offers.html">Offers</a></li>
+            <li><a href="video.html">Chefview</a></li>
+            <li><a href="list.html">Book</a></li>
+        </ul></div>
+        
+        <div align="right" class="icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div></div>
+        </nav>
+        </section>
+
+<h2 align="center">Seat Reservation<div class="cooking-icon">🍳</div></h2>
+<br>
+<br>
+<br>
+<div id="seats">
+    
+    <div class="tablle">
+        <div class="seat" id="A1" onclick="reserveSeat('A1')">A1</div>
+        <div class="seat" id="A2" onclick="reserveSeat('A2')">A2</div>
+        <div class="seat" id="B1" onclick="reserveSeat('B1')">B1</div>
+        <div class="seat" id="B2" onclick="reserveSeat('B2')">B2</div>
+    </div>
+    <div class="tablle">
+        <div class="seat" id="A11" onclick="reserveSeat('A11')">A1</div>
+        <div class="seat" id="A22" onclick="reserveSeat('A22')">A2</div>
+        <div class="seat" id="B11" onclick="reserveSeat('B11')">B1</div>
+        <div class="seat" id="B22" onclick="reserveSeat('B22')">B2</div>
+    </div>
+    
+    <div class="tablle">
+        <div class="seat" id="C1" onclick="reserveSeat('C1')">C1</div>
+        <div class="seat" id="C2" onclick="reserveSeat('C2')">C2</div>
+        <div class="seat" id="D1" onclick="reserveSeat('D1')">D1</div>
+        <div class="seat" id="D2" onclick="reserveSeat('D2')">D2</div>
+    </div>
+    <div class="tablle">
+        <div class="seat" id="C11" onclick="reserveSeat('C11')">C1</div>
+        <div class="seat" id="C22" onclick="reserveSeat('C22')">C2</div>
+        <div class="seat" id="D11" onclick="reserveSeat('D11')">D1</div>
+        <div class="seat" id="D22" onclick="reserveSeat('D22')">D2</div>
+    </div>
+   
+    <div class="tablle">
+        <div class="seat" id="A111" onclick="reserveSeat('A111')">A1</div>
+        <div class="seat" id="A222" onclick="reserveSeat('A222')">A2</div>
+        <div class="seat" id="B111" onclick="reserveSeat('B111')">B1</div>
+        <div class="seat" id="B222" onclick="reserveSeat('B222')">B2</div>
+    </div>
+    <div class="tablle">
+        <div class="seat" id="A1111" onclick="reserveSeat('A1111')">A1</div>
+        <div class="seat" id="A2222" onclick="reserveSeat('A2222')">A2</div>
+        <div class="seat" id="B1111" onclick="reserveSeat('B1111')">B1</div>
+        <div class="seat" id="B2222" onclick="reserveSeat('B2222')">B2</div>
+    </div>
+    <div class="tablle">
+        <div class="seat" id="C111" onclick="reserveSeat('C111')">C1</div>
+        <div class="seat" id="C222" onclick="reserveSeat('C222')">C2</div>
+        <div class="seat" id="D111" onclick="reserveSeat('D111')">D1</div>
+        <div class="seat" id="D222" onclick="reserveSeat('D222')">D2</div>
+    </div>
+    <div class="tablle">
+        <div class="seat" id="C1111" onclick="reserveSeat('C1111')">C1</div>
+        <div class="seat" id="C2222" onclick="reserveSeat('C2222')">C2</div>
+        <div class="seat" id="D1111" onclick="reserveSeat('D1111')">D1</div>
+        <div class="seat" id="D2222" onclick="reserveSeat('D2222')">D2</div>
+    </div>
+   
+   </div> 
+<br><br><br>
+<p align="center">Total Price: $<span id="totalPrice">0</span></p>
+
+<script>
+    const seatPrices = {
+        'A1': 100,
+        'A2': 100,
+        'B1': 80,
+        'B2': 80,
+        'A11': 100,
+        'A22': 100,
+        'B11': 80,
+        'B22': 80,
+        'A111': 100,
+        'A222': 100,
+        'B111': 80,
+        'B222': 80,
+        'A1111': 100,
+        'A2222': 100,
+        'B1111': 80,
+        'B2222': 80,
+        'C1':70,
+        'C2':70,
+        'D1':60,
+        'D2':60,
+        'C11':70,
+        'C22':70,
+        'D11':60,
+        'D22':60,
+        'C111':70,
+        'C222':70,
+        'D111':60,
+        'D222':60,
+        'C1111':70,
+        'C2222':70,
+        'D1111':60,
+        'D2222':60,
+        
+        
+        
+        
+    };
+
+    let reservedSeats = {};
+
+    function reserveSeat(seat) {
+        if (!reservedSeats[seat]) {
+            reservedSeats[seat] = true;
+            document.getElementById(seat).style.backgroundColor = "green";
+        } else {
+            reservedSeats[seat] = false;
+            document.getElementById(seat).style.backgroundColor = "lightgray";
+        }
+
+        calculateTotalPrice();
+
+        // Show an alert with the total price
+        alert("Total Price: $" + document.getElementById('totalPrice').textContent);
+    }
+
+    function calculateTotalPrice() {
+        let total = 0;
+        for (const seat in reservedSeats) {
+            if (reservedSeats[seat]) {
+                total += seatPrices[seat];
+            }
+        }
+        document.getElementById('totalPrice').textContent = total;
+    }
+</script>
+
+</body>
+</html>

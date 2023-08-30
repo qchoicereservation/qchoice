@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <title> booking</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      width: 300px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="text"], input[type="email"], input[type="password"] ,input[type="First name"],input[type="Last name"],input[type="Restaurant name"],input[type="table number"]{
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #373a3c;
+      color: #ffffff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    BUTTON:hover{
+      background-color: #5379a2;
+    }
+  </style>
+</head>
+<body background="restaurant_1.jpeg">
+<div class="container">
+  <h2 style="color: #575b5f;">Find your table for any occasion</h2><br>
+  <form>
+    <h4 style="color:rgb(204, 186, 186)">Get started with your first experience<br>BOOK NOW!</h4><br>
+    <div class="form-group">
+      <label for="First name">First name:</label>
+      <input type="First name" id="First name" name="First name" placeholder="First name" required><br><br>
+      <label for="Last name">Last name:</label>
+      <input type="Last name" id="Last name" name="Last name" placeholder="Last name" required><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"  placeholder="Password" required><br><br>
+      <label for="Restaurant name">Restaurant name:</label>
+      <input type="Restaurant name" id="Restaurant name" name="Restaurant name" placeholder="Restaurant name" required><br><br>
+      <label for="table number">Table number:</label>
+      <input type="table number" id="table number" name="table number" placeholder="table number" required>
+      <br><br>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button onclick="window.location.href='em.html'">BOOK NOW</button>
+  </form>
+</div>
+
+</body>
+</html>

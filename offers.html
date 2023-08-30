@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="box.css">
+    <title>offers</title>
+
+    <style type="text/css">
+    body {
+        background: linear-gradient(to right,rgb(248, 248, 118),rgb(250, 173, 186));
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .container {
+        display: grid;
+        width: 90%;
+        margin: 40px auto;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+    }
+
+    .front img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        
+    }
+
+    .container1 {
+        position: relative;
+        flex:1;
+        display:flex;
+    
+    }
+
+    .front h2 {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+    }
+
+    .back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: black;
+        color: white;
+        padding: 15px;
+        transform: perspective(600px) rotateY(180deg);
+        transition: transform .5s linear 0s;
+        backface-visibility: hidden;
+        border-radius: 10px
+    }
+
+    .front {
+        color: white;
+        transform: perspective(600px) rotateY(0deg);
+        transition: transform .5s linear 0s;
+
+
+    }
+
+    .container1:hover>.front {
+        transform: perspective(600px) rotateY(-180deg);
+        cursor: pointer;
+    }
+
+    .container1:hover>.back {
+        transform: perspective(600px) rotateY(0deg);
+        cursor: pointer;
+
+
+    }
+
+    @media(max-width: 800px) {
+        .container {
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+    }
+
+    @media(max-width: 500px) {
+        .container {
+            grid-template-columns: repeat(1, 1fr);
+
+        }
+    }
+    h1{
+        text-shadow: 0 0 10px black;
+    }
+    
+    </style>
+</head>
+
+<body>
+    <section style="background-color: white;box-shadow: 0 0 10px black;"><nav>
+        <div style="display:grid;grid-template-rows:100px">
+         <div class="topic"> 
+            <h1><b style="font-size:150px">Q</b>
+            <i style="color:rgb(235, 235, 72);font-size:100px;">choice</i></h1>
+        </div>
+         <ul align="right">
+        <li><a href="about.html"> About</a></li>
+        <li><a href="review.html">Review</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        <li><a href="video.html">Chefview</a></li>
+        <li><a href="list.html">Book</a></li>
+        </ul>
+        
+        <div align="right" class="icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        </nav>
+        </section>
+    <h1 style="font-family:cursive;text-align: center;color:white;font-size: 50px;"> Our Special Offers</h1>
+    <div class="container">
+        <div class="container1">
+            <div class="front">
+                <img src="f2.jpg">
+                <h2>Weekend Discounts</h2>
+            </div>
+            <div class="back">
+                <h2>Weekend Discounts</h2>
+                <p> Get ready to tantalize your taste buds with our Weekend Delights! 🍔🌮 Enjoy a rotating selection of discounted menu items each weekend, carefully crafted to add excitement to your dining experience. Don't miss out on the chance to savor our hidden gems that deserve the spotlight. Check our website and social media to discover this weekend's irresistible offer!
+                    .</p>
+            </div>
+        </div>
+        <div class="container1">
+            <div class="front">
+                <img src="f1.jpg">
+                <h2>Happy Hour Specials</h2>
+            </div>
+            <div class="back">
+                <h2>Happy Hour Specials</h2>
+                <p>
+                    Raise your glasses to online happiness with our Virtual Happy Hour! 🥂🍻 Join us Monday to Friday, 5-7 PM, for exclusive discounts and combos on your favorite alcoholic beverages. Bring the after-work hangout to your home by ordering from us and connecting with friends on Zoom. Let's toast to good times and great deals! Check out our website to see what's on the Happy Hour menu today.</p>
+            </div>
+        </div>
+        <div class="container1">
+            <div class="front">
+                <img src="f8.jpeg">
+                <h2>30 for 30 end of the month promos:</h2>
+            </div>
+            <div class="back">
+                <h2>30 for 30 end of the month promos
+                </h2>
+                <p>Introducing "Month-End Delights",
+                     On the 30th, spend $30+ and enjoy a free dessert or 15% off. Also, create a romantic home date with our classic dinner, free dessert/wine, personalized packaging, and playlist suggestions.</p>
+            </div>
+        </div>
+        <div class="container1">
+            <div class="front">
+                <img src="f9.jpeg">
+                <h2>Romantic date night at home</h2>
+            </div>
+            <div class="back">
+                <h2>Romantic date night at home</h2>
+                <p>Elevate your home date night with our restaurant's touch of romance. Enjoy classic dishes like pasta or steak, along with a complimentary dessert or wine. Our curated packaging, playlist, and optional flowers set the mood for an unforgettable evening together. Reserve now for an intimate and memorable experience.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+
+.box {
+display: inline-block;
+align-items: center;
+box-shadow: 0 0 10px rgb(34, 29, 29);
+padding:50px;
+margin:10px;
+box-sizing: border-box;
+border-radius: 50px;
+background-color: white;
+}
+img{
+    height: 500px;
+    width: 700px;
+}
+div .menu{
+display:grid;
+grid-template-columns: minmax(200px,auto) minmax(200px,auto)  ;
+grid-template-rows: minmax(200px,auto) minmax(200px,auto) ;
+}
+
+body{
+    background-color: rgb(238, 238, 249);
+}
+
+h1{
+    font-size: 50px;
+}
+h1 span{
+    
+    color:rgb(225, 225, 43);
+    font-family:mv boli;
+    line-height: 22px;
+    font-size: 60px;}
