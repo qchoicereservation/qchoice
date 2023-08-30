@@ -57,6 +57,7 @@ section nav ul  {
 }
 div .main{
     display :inline-block;
+    
 }
 
 div .text h1{
@@ -80,10 +81,12 @@ width: 50px;
     display:grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 700px;
+    display:flex;
+    flex-direction: row;
 }
 .text{
 padding-top: 400px;
-    text-align:right;
+
 
 
 }
@@ -91,6 +94,7 @@ p{
     font-family:fantasy;
     font-size: 30px;
 }
+
   .main button{
     width:400px;
     height: 150px;
