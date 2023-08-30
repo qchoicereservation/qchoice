@@ -7,21 +7,15 @@
     <style>
         @media(max-width: 800px) {
         .main {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(2,1fr);
+            height: 100%;
 
         }
     }
-    @media(max-width:768px){
-        .image-container,.text{
-            order:initial;
-            text-align: center;
-        }
-    }
-
-    @media(max-width: 500px) {
+   @media(max-width: 500px) {
         .main {
             grid-template-columns: repeat(1, 1fr);
-
+            height: 100vh;
         }
     }
 

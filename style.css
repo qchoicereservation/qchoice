@@ -55,10 +55,7 @@ section nav ul  {
     text-align: center;
     font-size:30px;
 }
-div .main{
-    display :inline-block;
-    
-}
+
 
 div .text h1{
     font-size:100px;
@@ -72,15 +69,13 @@ font-size: 150px;
 }
 
 body{
-height:50px;
-width: 50px;
     background: #e9d6c9;
 
 }
 .main{
     display:grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 700px;
+    grid-template-columns:1fr 1fr;
+    column-gap: 200px;
     display:flex;
     flex-direction: row;
 }
