@@ -12,10 +12,12 @@
   display: inline-block;
   background-color: white;
 }
+
 @media  only screen and (max-width:768px){
+
     .menu{
-        grid-template-columns:repeat(2,1fr);
-        grid-template-rows:repeat(4,990px);
+        grid-template-columns:repeat(1,1fr);
+        grid-template-rows:repeat(4,930px);
 
     }
     
@@ -28,17 +30,13 @@
 
 @media only screen and (max-width:700px) {
    
-   .menu-icon{
-    display:block;
+   
+   .search-bar{
+    width:auto;
+   }
+ 
+    
 
-   }
-   .menuu{
-    overflow: hidden;
-    transition:0.5s ;
-   }
- 
- 
- 
 
 }
 
@@ -47,14 +45,9 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   height: 30px;
-  width: 700px;
+  width: 400px;
 }
-.menu-icon{
-    float:right;
-    display: none;
-    width:100%;
-    cursor:pointer;
-}
+
 
 .search-icon {
   position: absolute;
@@ -73,14 +66,14 @@
             <i style="color:rgb(235, 235, 72);font-size:50px">choice</i></h1>
         </div>
         
-         <div><ul align="right" class="menuu">
+         <div id="menubar"><ul align="right" class="menuu">
         <li><a href="about.html"> About</a></li>
         <li><a href="review.html">Review</a></li>
         <li><a href="reservation.html">Reservation</a></li>
         <li><a href="offers.html">Offers</a></li>
             <li><a href="video.html">Chefview</a></li>
             <li><a href="list.html">Book</a></li>
-            
+           
         </ul>
     </div>
         
@@ -88,12 +81,13 @@
             <i class="fa-solid fa-magnifying-glass"></i>
             <i class="fa-solid fa-heart"></i>
             <i class="fa-solid fa-cart-shopping"></i>
-            
+            </div>
 
         </div></div>
         </nav>
         </section>
     <h1 style="text-align:center"> <span>Trending</span> restaurant in cities</h1>
+   
     <div align="center">
         <div align="center">
             <div class="search-bar">
@@ -202,8 +196,6 @@
                         <i class="fa-solid fa-star-half-stroke"></i>
                     </div>
                 </div></div></div>
-            
-                  
                 
 </body>
 </html>

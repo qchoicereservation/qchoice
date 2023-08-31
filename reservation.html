@@ -83,20 +83,28 @@ display:flex;
     padding-left: 100px;
 }
 @media(max-width: 800px) {
-        section{
+        #seats{
             grid-template-columns: repeat(3, 1fr);
-           
+           column-gap: 20px;
 
         }
     }
 
     @media(max-width: 500px) {
-        section {
-            grid-template-columns: repeat(3, 1fr);
-           
-
-
+        #seats{
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 20px;
+        
         }
+        @media only screen and(max-width: 500px) {
+    .container11{
+        width:100px;
+    }
+    .list{
+        text-align:center;
+    }
+
+
     }
     
 </style>
@@ -109,7 +117,7 @@ display:flex;
             <i style="color:rgb(235, 235, 72);font-size:50px">choice</i></h1>
         </div>
         
-         <div><ul align="right">
+         <div class="list"><ul align="right">
         <li><a href="about.html"> About</a></li>
         <li><a href="review.html">Review</a></li>
         <li><a href="reservation.html">Reservation</a></li>
